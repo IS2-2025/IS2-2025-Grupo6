@@ -1,8 +1,5 @@
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
+from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy import String
-
-class Base(DeclarativeBase):
-    pass
 
 class Producto(Base):
     __tablename__ = "productos"
