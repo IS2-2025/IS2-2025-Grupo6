@@ -2,3 +2,5 @@ pycache/
 *.pyc
 *.pyo
 *.pyd
+.vscode
+.venv
