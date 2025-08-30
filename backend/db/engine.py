@@ -1,5 +1,8 @@
 from sqlalchemy import create_engine
+from core.config import settings
 
-DATABASE_URL = "sqlite:///./app.db"
-
-engine = create_engine(DATABASE_URL, echo=True)
+engine = create_engine(
+    settings.DATABASE_URL,
+    echo=True,
+    future=True
+)
