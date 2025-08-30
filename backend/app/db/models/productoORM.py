@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy import String
-from backend.db.base import Base # cambiar a app.db.base cuando este bien la estructura
+from app.db.base import Base
 
 class Producto(Base):
     __tablename__ = "productos"
