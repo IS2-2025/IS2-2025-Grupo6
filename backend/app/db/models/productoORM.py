@@ -15,4 +15,9 @@ class Producto(Base):
     
     stock: Mapped[int] = mapped_column()
 
+    stock_min: Mapped[int] = mapped_column()
+    
+    def __repr__(self) -> str:
+         return f"table: {self.__tablename__} 'id: {self.id},nombre: {self.nombre},sku: {self.sku},stock: {self.stock},stock_min: {self.stock_min}' "
+    
     # movimientos: Mapped[ list[Movimiento] ] = mapped_column()
