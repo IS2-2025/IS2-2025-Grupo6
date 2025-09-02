@@ -4,3 +4,4 @@ pycache/
 *.pyd
 .vscode
 .venv
+*.db
